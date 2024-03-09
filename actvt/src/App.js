@@ -4,7 +4,7 @@ function App() {
 const[activity,setactivity]=useState("");
 const[list,setlist]=useState([])
 const[tym,settym]=useState("")
-
+const[text,settext]=useState('abhi')
 
 useEffect(()=>{
   const clock=setInterval(() => {
@@ -46,7 +46,7 @@ const removeAll=()=>{
 
   return (
     <>
-    <h1>Im doing an updation here...</h1>
+    <h1>Im {text} is doing an updation here...</h1>
     <h1>{tym}</h1>
 
     <h2 className='text-center mt-5'>MAKE YOUR TODO LIST</h2>
